@@ -1,0 +1,12 @@
+[
+  {
+      "html_url":"https://github.com/JetBrains/kotlin/pull/4725",
+      "title":"inlineClassUtils: Fix handling of inline classes without constructors (KT-50992)",
+      "state": "open",
+      "user":{
+          "id":907430,
+          "avatar_url":"https://avatars.githubusercontent.com/u/907430?v=4"
+      },
+      "created_at": "2022-01-27T13:17:11Z"
+  }
+]

@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="DashboardCard">
+        <attr name="card_count" format="integer" />
+        <attr name="card_title" format="string" />
+        <attr name="card_text_color" format="reference" />
+        <attr name="card_color" format="reference" />
+        <attr name="card_icon" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GithubRepo</string>
+    <string name="title_issues">Issues</string>
+    <string name="title_issue_detail">Issue Detail</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_about">About</string>
+    <string name="watchers">Watchers</string>
+    <string name="forks">Forks</string>
+    <string name="subscribers">Subscribers</string>
+    <string name="open_issues">Open Issues</string>
+    <string name="view">View</string>
+    <string name="empty_list">Empty list</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.jwar.github_repo.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_issues"
+        android:name="com.jwar.github_repo.ui.issues.IssueListFragment"
+        android:label="@string/title_issues"
+        tools:layout="@layout/fragment_issue_list" >
+        <action
+            android:id="@+id/actionIssueDetail"
+            app:destination="@id/issueDetailFragment">
+            <argument
+                android:name="Issue"
+                app:argType="com.jwar.github_repo.domain.model.IssueModel"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/issueDetailFragment"
+        android:name="com.jwar.github_repo.ui.issues.IssueDetailFragment"
+        android:label="@string/title_issue_detail"
+        tools:layout="@layout/fragment_issue_detail">
+        <argument
+            android:name="Issue"
+            app:argType="com.jwar.github_repo.domain.model.IssueModel"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.jwar.github_repo.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
